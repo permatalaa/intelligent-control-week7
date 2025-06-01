@@ -1,0 +1,7 @@
+Analisa dan Diskusi Week 7
+
+Sistem deteksi menggunakan metode Canny dan stereo telah berhasil diterapkan untuk mengenali objek nyata serta mengukur dimensinya, terutama pada tepi rel kereta api. Gambar di sisi kanan memperlihatkan hasil deteksi tepi dengan algoritma Canny, di mana kontur objek seperti rel, batu ballast, dan lingkungan sekitar dapat dikenali dengan sangat jelas. Deteksi tepi ini menjadi langkah awal dalam proses segmentasi dan pencocokan stereo (stereo matching).
+
+Sementara itu, gambar di tengah menampilkan hasil pengolahan dari kamera kiri yang dilengkapi dengan beberapa anotasi pengukuran lebar, panjang, kemiringan, dan deformasi pada area rel yang dianalisis. Pengukuran tersebut didasarkan pada peta disparitas yang terlihat di sisi kiri gambar, di mana area berwarna putih menunjukkan kedalaman relatif dekat, sedangkan area gelap menandakan objek yang lebih jauh. Hal ini membuktikan bahwa algoritma stereo matching berhasil menghitung perbedaan posisi objek antara dua kamera (kiri dan kanan), sehingga informasi mengenai kedalaman dan dimensi dapat diperoleh dengan akurat.
+
+Secara keseluruhan, rangkaian proses ini berjalan efektif mulai dari deteksi tepi, kalibrasi stereo, hingga perhitungan parameter geometris dalam aplikasi inspeksi rel. Namun, terdapat indikasi adanya sedikit noise pada peta disparitas, terlihat dari titik-titik putih yang tersebar, yang mengisyaratkan perlunya penyetelan parameter lebih lanjut pada proses block matching atau filtering
